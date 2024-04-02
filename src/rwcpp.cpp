@@ -110,7 +110,7 @@ std::unordered_map<std::tuple<int, int>, int> random_walks(const std::map<int, s
                 std::tuple<int, int> dict_key = std::make_tuple(curr_node, nex);
                 output[dict_key]++ ;
 
-                while(walk.size() < walk_length){
+                while(int(walk.size()) < walk_length){
                     int walk_size = walk.size();
                     int cur = walk[walk_size - 1];
                     int prev = walk[walk_size - 2];

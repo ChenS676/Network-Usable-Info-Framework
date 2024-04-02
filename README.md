@@ -48,6 +48,8 @@ NetInfoF is evaluated on 7 homophily and 5 heterophily real-world graphs, as wel
 2. Compile C++ random walk code:
    
 `g++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) src/rwcpp.cpp -o src/rwcpp$(python3-config --extension-suffix)`
+# works in jupyter
+`g++ -O3 -Wall -shared -std=c++17 -fPIC $(python3 -m pybind11 --includes) src/rwcpp.cpp -o src/rwcpp$(python3-config --extension-suffix)`
 
 3. Run NetInfoF:
 
